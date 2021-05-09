@@ -23,7 +23,7 @@ class CardGame:
 
 
   def check_for_ace(self, card): 
-    if card.value = 1:
+    if card.value = 1:                    # equality not assignment (= should be ==)
       return True
     else                                  # needs a colon (else:)
       return False
@@ -41,6 +41,6 @@ def cards_total(self, cards):             # function should be indented from cla
   total                                   # total is not defined, could be assigned 0 to start
   for card in cards:
     total += card.value
-    return "You have a total of" + total  # cannot concatenate str and int, use f-string (f"You have a total of {total}")
+    return "You have a total of" + total  # cannot concatenate str and int, use f-string (f"You have a total of {total}"); return should not be part of for loop, return after for loop has finished
   
 ```
